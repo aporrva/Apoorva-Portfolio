@@ -27,7 +27,8 @@ export function Navigation() {
     { label: 'About', id: 'about' },
     { label: 'Projects', id: 'projects' },
     { label: 'Skills', id: 'skills' },
-    { label: 'Contact', id: 'contact' }
+    { label: 'Contact', id: 'contact' },
+    { label: 'Resume', pdf: '/pdfFolder/apoorva rawat resume.pdf' } // Resume button
   ];
 
   return (
@@ -49,13 +50,20 @@ export function Navigation() {
           </button>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-6">
             {navItems.map((item) => (
               <button
-                key={item.id}
-                onClick={() => scrollToSection(item.id)}
-                className={`font-medium transition-colors hover:text-[#4F46E5] ${
-                  isScrolled ? 'text-[#111827]' : 'text-gray-700'
+                key={item.id || item.pdf}
+                onClick={() => {
+                  if (item.id) scrollToSection(item.id);
+                  else if (item.pdf) window.open(item.pdf, "_blank");
+                }}
+                className={`font-medium transition-colors ${
+                  item.pdf
+                    ? 'bg-gradient-to-r from-[#4F46E5] to-purple-600 text-white px-4 py-2 rounded-lg hover:scale-105 transform transition-transform'
+                    : isScrolled
+                    ? 'text-[#111827] hover:text-[#4F46E5]'
+                    : 'text-gray-700 hover:text-[#4F46E5]'
                 }`}
               >
                 {item.label}
@@ -83,9 +91,17 @@ export function Navigation() {
             <div className="flex flex-col gap-2 px-4">
               {navItems.map((item) => (
                 <button
-                  key={item.id}
-                  onClick={() => scrollToSection(item.id)}
-                  className="text-left px-4 py-3 text-[#111827] font-medium hover:bg-indigo-50 hover:text-[#4F46E5] rounded-[12px] transition-all"
+                  key={item.id || item.pdf}
+                  onClick={() => {
+                    if (item.id) scrollToSection(item.id);
+                    else if (item.pdf) window.open(item.pdf, "_blank");
+                    setIsMobileMenuOpen(false);
+                  }}
+                  className={`text-left px-4 py-3 font-medium rounded-[12px] transition-all ${
+                    item.pdf
+                      ? 'bg-gradient-to-r from-[#4F46E5] to-purple-600 text-white hover:scale-105 transform transition-transform'
+                      : 'text-[#111827] hover:bg-indigo-50 hover:text-[#4F46E5]'
+                  }`}
                 >
                   {item.label}
                 </button>
