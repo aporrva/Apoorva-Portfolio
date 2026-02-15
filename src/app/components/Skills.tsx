@@ -1,9 +1,9 @@
-import { 
-  Code2, 
-  Database, 
-  Globe, 
-  Layout, 
-  Server, 
+import {
+  Code2,
+  Database,
+  Globe,
+  Layout,
+  Server,
   Smartphone,
   GitBranch,
   Package
@@ -16,6 +16,12 @@ export function Skills() {
       title: 'React',
       description: 'Building modern, interactive UIs with hooks and context',
       color: 'from-cyan-500 to-blue-500'
+    },
+    {
+      icon: Smartphone,
+      title: 'React Native',
+      description: 'Cross-platform mobile app development for iOS & Android',
+      color: 'from-sky-500 to-indigo-500'
     },
     {
       icon: Server,
@@ -61,7 +67,7 @@ export function Skills() {
             Technologies I work with to bring your ideas to life
           </p>
         </div>
-        
+
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {skillCategories.map((skill, index) => {
             const Icon = skill.icon;
@@ -76,7 +82,7 @@ export function Skills() {
                     <Icon className="w-8 h-8 text-white" />
                     <div className="absolute inset-0 rounded-[14px] bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                   </div>
-                  
+
                   {/* Content */}
                   <div className="space-y-2">
                     <h3 className="text-lg font-semibold text-[#111827] group-hover:text-[#4F46E5] transition-colors">
@@ -87,7 +93,7 @@ export function Skills() {
                     </p>
                   </div>
                 </div>
-                
+
                 {/* Hover Gradient Border Effect */}
                 <div className="absolute inset-0 rounded-[16px] bg-gradient-to-br from-[#4F46E5] to-purple-600 opacity-0 group-hover:opacity-10 transition-opacity -z-10"></div>
               </div>

@@ -16,10 +16,10 @@ export function Projects() {
       id: 2,
       title: 'Mani Artisan Jewellery',
       description: 'Full-featured online shopping platform with payment integration, inventory management, and user authentication.',
-      image: ' / ',
+      image: '/images/manipic.png',
       tech: ['Next.js', 'Tailwind', 'React'],
-      liveUrl: '#',
-      githubUrl: '#'
+      liveUrl: 'https://mani-artisan-jewellery.netlify.app/',
+      githubUrl: 'https://github.com/aporrva/Mani-Artisan-Jewellery'
     },
     {
       id: 3,
@@ -27,8 +27,8 @@ export function Projects() {
       description: 'A clean, modern, and professional form-filling website design focused on collecting user information efficiently with a secure, user-friendly interface.',
       image: '/images/formfilling.png',
       tech: ['React', 'Express', 'Tailwind'],
-      liveUrl: '#',
-      githubUrl: '#'
+      liveUrl: 'https://form-filling-website.netlify.app/',
+      githubUrl: 'https://github.com/aporrva/Form-Filling-Website'
     }
   ];
 

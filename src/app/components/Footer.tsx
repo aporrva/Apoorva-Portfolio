@@ -4,22 +4,17 @@ export function Footer() {
   const socialLinks = [
     {
       icon: Github,
-      url: 'https://github.com',
+      url: 'https://github.com/aporrva',
       label: 'GitHub',
       color: 'hover:text-gray-900'
     },
     {
       icon: Linkedin,
-      url: 'https://linkedin.com',
+      url: 'https://www.linkedin.com/in/apoorva-rawat-8908393a5/',
       label: 'LinkedIn',
       color: 'hover:text-blue-600'
     },
-    {
-      icon: Twitter,
-      url: 'https://twitter.com',
-      label: 'Twitter',
-      color: 'hover:text-blue-400'
-    }
+    
   ];
 
   return (
