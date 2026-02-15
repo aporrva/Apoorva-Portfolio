@@ -1,11 +1,8 @@
 # 📄 Apoorva Rawat
 
-📍 India  
-📧 apoorvarawat87@gmail.com  
-📱 +91 9258571501  
-🌐 [apurva-rawat.com](https://apurva-rawat.com)  
-💻 [github.com/aporrva](https://github.com/aporrva)  
-🎂 **Date of Birth:** 18th November 2004 (Age: 21)  
+📍 Kotdwara, Uttarakhand, India | 🎂 18th November 2004 (Age: 21) | 👩 Female  
+📧 apoorvarawat87@gmail.com | 📱 +91 9258571501  
+🌐 [apurva-rawat.com](https://apurva-rawat.com) | 💻 [github.com/aporrva](https://github.com/aporrva)  
 
 ---
 
