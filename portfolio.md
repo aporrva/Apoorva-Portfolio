@@ -8,7 +8,7 @@
 
 ## 💼 Professional Summary
 
-Full Stack Developer specializing in **React, TypeScript, Node.js, and Tailwind CSS**, with hands-on experience building production-ready web applications featuring API integrations, email automation, responsive UI systems, and dynamic project rendering.  
+Full Stack Developer specializing in **React, React Native, Node.js, and Tailwind CSS**, with hands-on experience building production-ready web applications featuring API integrations, responsive UI systems, and dynamic project rendering.  
 
 Also experienced as a **Chemistry Teacher** and freelance web developer, bringing strong problem-solving, communication, and mentorship skills.  
 
@@ -17,7 +17,7 @@ Also experienced as a **Chemistry Teacher** and freelance web developer, bringin
 ## 🛠 Technical Skills
 
 **Frontend:**  
-React.js (Hooks, Functional Components) ⚛️ | TypeScript 🟦 | Tailwind CSS 🎨 | Next.js ⬛ | Responsive UI | Component Architecture | State Management (`useState`)  
+React.js (Hooks, Functional Components) ⚛️ | React Native 📱 | TypeScript 🟦 | Tailwind CSS 🎨 | Next.js ⬛ | Responsive UI | Component Architecture
 
 **Backend:**  
 Node.js 🟢 | Express.js ⚡ | REST API Integration | EmailJS  
@@ -94,7 +94,7 @@ A clean, modern, and professional form-filling website design focused on collect
 
 ## 🎓 Education
 
-- **B.Sc. in Mathematics (PCM), Languages: English & Hindi** — Graduation 🎓  
+- **B.Sc. in Mathematics (PCM), Languages: English & Hindi** — Graduation 2025🎓  
 - **Intermediate (CBSE Board)** — 2022 📘  
 - **High School (ICSE Board)** — 2020 📗  
 
