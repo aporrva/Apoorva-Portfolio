@@ -25,8 +25,8 @@ export function Skills() {
     },
     {
       icon: Database,
-      title: 'mysql',
-      description: 'NoSQL database design and optimization',
+      title: 'MySQL',
+      description: 'Database design and optimization',
       color: 'from-green-600 to-green-700'
     },
     {
@@ -47,18 +47,6 @@ export function Skills() {
       description: 'Type-safe JavaScript for better code quality',
       color: 'from-blue-600 to-blue-700'
     },
-    {
-      icon: GitBranch,
-      title: 'Git & GitHub',
-      description: 'Version control and collaborative development',
-      color: 'from-orange-500 to-red-600'
-    },
-    {
-      icon: Package,
-      title: 'Docker',
-      description: 'Containerization for consistent deployments',
-      color: 'from-blue-500 to-blue-700'
-    }
   ];
 
   return (

@@ -50,7 +50,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-[#111827] mb-1">Email</h3>
-                  <p className="text-sm text-gray-600">apoorva@example.com</p>
+                  <p className="text-sm text-gray-600">apoorvarawat87@gmail.com</p>
                 </div>
               </div>
             </div>
@@ -62,7 +62,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-[#111827] mb-1">Phone</h3>
-                  <p className="text-sm text-gray-600">+91 98765 43210</p>
+                  <p className="text-sm text-gray-600">+91 9258571501</p>
                 </div>
               </div>
             </div>

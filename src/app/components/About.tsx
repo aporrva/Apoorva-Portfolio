@@ -1,7 +1,7 @@
 export function About() {
   const skills = [
     'JavaScript', 'TypeScript', 'React', 'Node.js', 
-    'mysql', 'Express', 'Tailwind CSS',
+    'MySQL', 'Express', 'Tailwind CSS',
     'REST APIs',"React Native"
   ];
 

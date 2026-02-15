@@ -5,28 +5,28 @@ export function Projects() {
   const projects = [
     {
       id: 1,
-      title: 'Analytics Dashboard',
-      description: 'A comprehensive analytics platform with real-time data visualization, custom reports, and interactive charts for business intelligence.',
+      title: 'Ethreal Design',
+      description: 'A creative digital agency and design-led company that focuses on crafting digital products and experiences through strategy, creativity, and UX (user experience) design.',
       image: 'https://images.unsplash.com/photo-1665470909939-959569b20021?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3ZWIlMjBhcHBsaWNhdGlvbiUyMGRhc2hib2FyZHxlbnwxfHx8fDE3NzEwNDM2NTV8MA&ixlib=rb-4.1.0&q=80&w=1080',
-      tech: ['React', 'TypeScript', 'Node.js', 'MongoDB'],
+      tech: ['React', 'TypeScript', 'Next.js' ],
       liveUrl: '#',
       githubUrl: '#'
     },
     {
       id: 2,
-      title: 'E-Commerce Platform',
+      title: 'Mani Artisan Jewellery',
       description: 'Full-featured online shopping platform with payment integration, inventory management, and user authentication.',
       image: 'https://images.unsplash.com/photo-1658297063569-162817482fb6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlY29tbWVyY2UlMjBzaG9wcGluZyUyMHdlYnNpdGV8ZW58MXx8fHwxNzcxMTMyOTQzfDA&ixlib=rb-4.1.0&q=80&w=1080',
-      tech: ['Next.js', 'Tailwind', 'Stripe', 'PostgreSQL'],
+      tech: ['Next.js', 'Tailwind', 'React'],
       liveUrl: '#',
       githubUrl: '#'
     },
     {
       id: 3,
-      title: 'Task Management App',
-      description: 'Collaborative task management tool with team workflows, real-time updates, and productivity tracking features.',
+      title: 'Form Filling Website',
+      description: 'A clean, modern, and professional form-filling website design focused on collecting user information efficiently with a secure, user-friendly interface.',
       image: 'https://images.unsplash.com/photo-1707836868495-3307d371aba4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBkZXNpZ24lMjBtb2NrdXB8ZW58MXx8fHwxNzcxMTM3NDMwfDA&ixlib=rb-4.1.0&q=80&w=1080',
-      tech: ['React', 'Express', 'Socket.io', 'Redux'],
+      tech: ['React', 'Express','Tailwind'],
       liveUrl: '#',
       githubUrl: '#'
     }
