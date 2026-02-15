@@ -95,6 +95,7 @@ export function Projects() {
                   </a>
                   <a
                     href={project.githubUrl || "#"}
+                    target='_blank'
                     onClick={(e) => {
                       if (!project.githubUrl) e.preventDefault();
                     }}
