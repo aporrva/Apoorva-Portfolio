@@ -7,16 +7,16 @@ export function Projects() {
       id: 1,
       title: 'Ethreal Design',
       description: 'A creative digital agency and design-led company that focuses on crafting digital products and experiences through strategy, creativity, and UX (user experience) design.',
-      image: 'https://images.unsplash.com/photo-1665470909939-959569b20021?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3ZWIlMjBhcHBsaWNhdGlvbiUyMGRhc2hib2FyZHxlbnwxfHx8fDE3NzEwNDM2NTV8MA&ixlib=rb-4.1.0&q=80&w=1080',
-      tech: ['React', 'TypeScript', 'Next.js' ],
-      liveUrl: '#',
-      githubUrl: '#'
+      image: '/images/ethereal ss.jpeg',
+      tech: ['React', 'TypeScript', 'Next.js'],
+      liveUrl: 'https://etherealdesign.io/',
+      githubUrl: null
     },
     {
       id: 2,
       title: 'Mani Artisan Jewellery',
       description: 'Full-featured online shopping platform with payment integration, inventory management, and user authentication.',
-      image: 'https://images.unsplash.com/photo-1658297063569-162817482fb6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlY29tbWVyY2UlMjBzaG9wcGluZyUyMHdlYnNpdGV8ZW58MXx8fHwxNzcxMTMyOTQzfDA&ixlib=rb-4.1.0&q=80&w=1080',
+      image: ' / ',
       tech: ['Next.js', 'Tailwind', 'React'],
       liveUrl: '#',
       githubUrl: '#'
@@ -25,8 +25,8 @@ export function Projects() {
       id: 3,
       title: 'Form Filling Website',
       description: 'A clean, modern, and professional form-filling website design focused on collecting user information efficiently with a secure, user-friendly interface.',
-      image: 'https://images.unsplash.com/photo-1707836868495-3307d371aba4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBkZXNpZ24lMjBtb2NrdXB8ZW58MXx8fHwxNzcxMTM3NDMwfDA&ixlib=rb-4.1.0&q=80&w=1080',
-      tech: ['React', 'Express','Tailwind'],
+      image: '/images/formfilling.png',
+      tech: ['React', 'Express', 'Tailwind'],
       liveUrl: '#',
       githubUrl: '#'
     }
@@ -44,7 +44,7 @@ export function Projects() {
             Here are some of my recent projects that showcase my skills and passion for development
           </p>
         </div>
-        
+
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
             <div
@@ -60,17 +60,17 @@ export function Projects() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
-              
+
               {/* Project Content */}
               <div className="p-6 space-y-4">
                 <h3 className="text-xl font-semibold text-[#111827] group-hover:text-[#4F46E5] transition-colors">
                   {project.title}
                 </h3>
-                
-                <p className="text-gray-600 text-sm leading-relaxed line-clamp-3">
+
+                <p className="text-gray-600 text-sm leading-relaxed line-clamp-6">
                   {project.description}
                 </p>
-                
+
                 {/* Tech Stack */}
                 <div className="flex flex-wrap gap-2">
                   {project.tech.map((tech, index) => (
@@ -82,23 +82,34 @@ export function Projects() {
                     </span>
                   ))}
                 </div>
-                
+
                 {/* Action Buttons */}
                 <div className="flex gap-3 pt-2">
                   <a
                     href={project.liveUrl}
-                    className="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 bg-gradient-to-r from-[#4F46E5] to-purple-600 text-white rounded-[12px] hover:shadow-lg transition-all duration-300 text-sm font-medium"
+                    className="flex-1  flex items-center justify-center gap-2 px-4 py-2.5 bg-gradient-to-r from-[#4F46E5] to-purple-600 text-white rounded-[12px] hover:shadow-lg transition-all duration-300 text-sm font-medium"
+                    target='_blank'
                   >
                     <ExternalLink className="w-4 h-4" />
                     Live Demo
                   </a>
                   <a
-                    href={project.githubUrl}
-                    className="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 bg-gray-100 text-gray-700 rounded-[12px] hover:bg-gray-200 transition-all duration-300 text-sm font-medium"
+                    href={project.githubUrl || "#"}
+                    onClick={(e) => {
+                      if (!project.githubUrl) e.preventDefault();
+                    }}
+                    className={`flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-[12px] transition-all duration-300 text-sm font-medium
+    ${project.githubUrl
+                        ? "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                        : "bg-gray-100 text-gray-400 cursor-not-allowed"
+                      }
+  `}
+                    title={!project.githubUrl ? "Private Repository" : ""}
                   >
                     <Github className="w-4 h-4" />
                     GitHub
                   </a>
+
                 </div>
               </div>
             </div>

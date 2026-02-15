@@ -53,8 +53,8 @@ export function Hero() {
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-r from-[#4F46E5] to-purple-600 rounded-[32px] blur-2xl opacity-20 animate-pulse"></div>
               <div className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-[32px] overflow-hidden shadow-2xl ring-4 ring-white">
-                <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1653732212701-b729f0b08330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBkZXZlbG9wZXIlMjBwb3J0cmFpdCUyMGhlYWRzaG90fGVufDF8fHx8MTc3MTEzODE0Nnww&ixlib=rb-4.1.0&q=80&w=1080"
+                <img
+                  src="/images/profilePic.jpg"
                   alt="Apoorva Rawat"
                   className="w-full h-full object-cover"
                 />
