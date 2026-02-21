@@ -54,7 +54,7 @@ export function Hero() {
               <div className="absolute -inset-4 bg-gradient-to-r from-[#4F46E5] to-purple-600 rounded-[32px] blur-2xl opacity-20 animate-pulse"></div>
               <div className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-[32px] overflow-hidden shadow-2xl ring-4 ring-white">
                 <img
-                  src="/images/profilePic.jpg"
+                  src="/images/profilePic.JPG"
                   alt="Apoorva Rawat"
                   className="w-full h-full object-cover"
                 />
